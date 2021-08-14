@@ -13,3 +13,6 @@ module DevExam
     # -- all .rb files in that directory are automatically loaded.
   end
 end
+
+# DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`の回避コード
+Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
